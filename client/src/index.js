@@ -8,8 +8,8 @@ import store from './Redux/store';
 
 import axios from 'axios';
 
-axios.defaults.baseURL = process.env.REACT_APP_LOCAL
-//axios.defaults.baseURL = 'http://pivideogames-production-7b6b.up.railway.app' 
+//axios.defaults.baseURL = process.env.REACT_APP_LOCAL
+axios.defaults.baseURL = 'https://videogames-mongo-back.vercel.app' 
 
 
 const root = createRoot(document.getElementById("root"));
