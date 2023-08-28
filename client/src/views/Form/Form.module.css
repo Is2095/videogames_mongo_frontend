@@ -1,0 +1,312 @@
+
+.error {
+    display: flex;
+    color: rgb(241, 6, 6);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px; 
+}
+.containerPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 60%;
+    padding-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.cabezera {
+    display: flex;
+    justify-content: center;
+}
+.volver{
+    border: 2px solid yellow;
+    position: relative;
+    border: none;
+    outline: none;
+    left: 30%;
+    right: -30%;
+    text-align: center;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid #4498f4;
+    background-color: rgba(255, 228, 196, 0.4);
+    box-shadow: 3px 5px 5px 1px #9f13ed;
+    width: 90%;
+    height: auto;
+    padding-bottom: 2vh;
+    margin-top: 3vh;
+}
+.titulo{
+    text-align: center;
+    color: #9f13ed;
+    font-family: cursive;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+.botonVolver {
+        width: 40px;
+        height: 40px;
+        border: none;
+        outline: none;
+        font-weight: 900;
+        border-radius: 20px;
+        background-color: rgba(255, 228, 196, 0.1);
+        margin: 10px;
+        transition: 0.6s; 
+        cursor: pointer;
+}
+.botonVolver:hover {
+    color: red;
+    transform: rotate(-360deg);
+}
+.inputs {
+    /* border: 2px solid red; */
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.botonesGeneralGP{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content:center;
+    width: 60%;
+    /* border: 2px solid yellow; */
+}
+.a {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border: 5px solid; */
+}
+.botonesGP {
+    width: 130px;
+    height: 4vh;
+    /* border: none; */
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #4498f4;
+    box-shadow: 3px 3px 5px 1px #9f13ed;
+    font-family: cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: rgb(246, 246, 242, .8);
+    color: #333;
+    transition: .3s;
+}
+.botonesGP:hover {
+    transform: scale(1.1);
+}
+.containerLabel {
+    font-family: "Verdana", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1vh;
+}
+.entradaName {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    height: 110px;
+  
+}
+.entrada {
+    width: 9vw;
+    height: 4vh;
+    border: none;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-family: cursive;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: #f5f5f5;
+    color: #333;
+    outline: none;
+    /* box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.651); */
+    transition: box-shadow 0.3s; 
+}
+.entrada:hover {
+    box-shadow: 3px 3px 8px 3px #9f13ed;
+
+}
+
+
+.glowOnHover {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 220px; 
+    height: 50px;
+    border: 2px solid cornflowerblue;
+    outline:#ff0000;
+    border-radius: 80px;
+    /* color: #fff; */
+    color: #000;
+    background: rgba(255, 228, 196, 0.5);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    /* border-radius: 10px; */
+}
+
+.glowOnHover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -4px;
+    left:-4px;
+    background-size: 200%;
+    z-index: -1;
+    filter: blur(15px);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    
+}
+
+.glowOnHover:active {
+    color: #000
+}
+
+.glowOnHover:active:after {
+    background: transparent;
+}
+
+.glowOnHover:hover:before {
+    opacity: 1;
+}
+
+.glowOnHover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: #111; */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+@media (max-width: 760px) {
+    .containerPrincipal {
+        height: auto;
+        width: 100%;
+        padding-top: 10px;
+        margin-left: 0%;
+        margin-right: 0%;  
+    }
+    .form {
+        width: 95%;
+    }
+    .titulo {
+        font-size: 1rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .inputs {
+        /* border: 2px solid red; */
+        width: 14.5rem;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: .3rem;
+        /* margin-left: 10%;
+        margin-right: 10%; */
+    }
+    .containerLabel {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: black;
+    }
+    .entrada {
+        width: 10rem;
+    }  
+    .botonesGeneralGP{
+        flex-direction: column;
+    }
+    .botonesGP {
+        margin: .3rem;
+    }
+    .glowOnHover {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5px;   
+    }
+    .botonVolver {
+        position: relative;
+        top: 0;
+        left: -4rem;
+     }
+}
+
+@media (min-width: 768px) {
+    .a {
+        margin: .5rem;
+    }
+    .glowOnHover {
+        margin-left: 25%;
+        margin-top: 5px;    
+    } 
+    
+    .botonVolver {
+       position: relative;
+       top: 0;
+       left: -7rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .botonVolver {
+        position: relative;
+        top: 0;
+        left: -5.5rem;
+     }
+  }
+  
+  @media (min-width: 1280px) {
+    .glowOnHover {
+        margin-left: 35%;  
+    }
+  }
+  @media (min-width: 1700px) {
+    .botonVolver {
+        position: relative;
+        top: 0;
+        left: 0rem;
+     }
+  }
+  
+  

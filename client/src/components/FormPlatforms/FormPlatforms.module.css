@@ -1,0 +1,88 @@
+
+.error {
+    display: flex;
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 85%;
+    position: absolute;
+    z-index: 100;
+    left: 10%;
+    right: 10%;
+    top: 80px;
+    background-color: rgb(245, 245, 220);
+    border-radius: 15px;
+}
+.platfoms{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+.cheboxx {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    background-color:  rgb(146, 144, 144, .8);
+    margin: 25px;
+    width: 11rem;
+    height: 1.8rem;
+}
+.botones {
+    display: block;
+    text-align: center;
+    margin: 50px;
+}
+.botonesP {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    background-color: beige;
+    transition: 0.3s; 
+    cursor: pointer;
+}
+.botonesP:hover {
+
+     transform: scale(1.3);
+}
+.botonesPX {
+    background-color: beige;
+    outline: none;
+    border: none;
+    margin: 10px;
+    transition: .5s;
+}
+.botonesPX:hover {
+    color: red;
+    transform:  rotate(180deg);
+}
+
+@media (max-width: 760px) {
+    .container {
+        
+        width: 95%;
+        
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+        left: 5%;    
+    }
+}
+@media (min-width: 1700px) {
+      .container {
+          width: 85%;
+          left: 8%;    
+      }
+    
+  }

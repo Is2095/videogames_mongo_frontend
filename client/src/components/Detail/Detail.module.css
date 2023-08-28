@@ -1,0 +1,384 @@
+body {
+  background-color: white;
+}
+
+.containerDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-left: 15%;
+  width: 70%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgb(239, 239, 203, .3);
+  /* border: 2px solid rgb(239, 239, 203, .2); */
+}
+.nameImage{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  width: 80%;
+  height: auto;
+  /* border: 2px solid blueviolet; */
+  /* background-color: antiquewhite; */
+}
+.primerPlano {
+  display: flex;
+  flex-wrap: row;
+  margin: 10px;
+  /* border: 2px solid blue; */
+  height: 60px;
+  width: auto;
+}
+.nameV {
+  padding-left: 50px;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.h {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagen {
+  /* margin: 0px 0px 20px 0px; */
+  border:  1px solid black;
+  border-radius: 15px;
+  margin-left: 3rem;
+  width: 18rem;
+  box-shadow: 6px 6px 8px 0px rgba(17, 16, 16, 0.651);
+  
+  transition: .8s;
+}
+.imagen:hover {
+  transform: scale(2.3);
+}
+.name {
+  font-family: "Verdana", sans-serif;
+  /* border: 2px solid red; */
+  margin: 18px 0px 10px 5px;
+
+  text-align: end;
+   /*width: auto; */
+  height: 40px;
+  font-size: 1.5rem;
+ color: bisque;
+  /* color:  rgb(240, 64, 64); */
+  /* color: rgba(48, 30, 9, 0.616); */
+}
+.ratingRelease {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: flex-end;
+  margin-left: 2rem;
+  /* margin-bottom: 20px; */
+}
+.desciptionDatos{
+  font-family: cursive;
+}
+.generosPlataformas{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.h5a {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+
+} 
+.genres {
+  margin: 0px 0px 0px 80px;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+.platforms {
+  margin: 0px 0px 0px 87px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+.spanA{
+  color: bisque;
+  padding: 3px;
+}
+.descripcion {
+  /* border: 2px solid green; */
+  background-color: rgb(239, 239, 203, .4);
+  border-radius: 30px;
+  width: 80%;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.descriptionDatos {
+  font-family:cursive;
+  font-size: 1.5rem;
+  color: rgb(53, 53, 53);
+}
+
+.boton {
+  margin: 50px;
+  background-color:  rgb(239, 239, 203, .1);  
+  padding: 10px;  
+  border-radius: 50%;
+  width: 100px;
+  transition: 0.4s;
+  text-align: center;
+}
+.boton:hover {
+  transform: scale(1.09);
+  background-color:  rgb(239, 239, 203, .4);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8), 0 6px 20px 0 rgba(0,0,0,0.4);
+  color: white;
+ }
+.link {
+ 
+  text-decoration: none;
+  color: black;
+
+}
+
+.p {
+    font-family: "Verdana", sans-serif;
+    font-size: 1rem;
+    color: rgba(48, 30, 9, 0.616);
+  }
+
+  
+@media (max-width: 765px) {
+  .containerDetail {
+    margin: 1rem 0rem 0rem 0rem;
+    width: 25rem;
+  }
+  .nameV {
+    font-size: 1.8rem;
+  }
+  .nameImage {
+    flex-direction: column;
+  }
+  .imagen {
+    margin: 0;
+    width: 12rem;
+  }
+  .generosPlataformas {
+    flex-direction: column;
+  }
+  .ratingRelease {
+    margin: .3rem;
+  }
+  .name {
+    font-size: 1.5rem;
+    margin-top: .6rem;
+  }
+  .spanA {
+    font-size: 1.5rem;
+  }
+  .primerPlano {
+    margin: .3rem;
+  }
+  .h {
+    font-size: 1.2rem;
+  }
+  .h5a {
+    font-size: 1.2rem;
+  }
+  .descripcion {
+    font-size: .9rem;
+   }
+  .descriptionDatos {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .containerDetail {
+    margin-top: 3rem;
+    margin-left: 4%;
+    width: 90%;
+  }
+  .nameV {
+    font-size: 2.1rem;
+  }
+  .nameImage {
+    flex-direction: rom;
+  }
+  .imagen {
+    margin-left: 3rem;
+    width: 10rem;
+  }
+  .generosPlataformas {
+    flex-direction: column;
+  }
+  .ratingRelease {
+    margin: .3rem;
+  }
+  .name {
+    font-size: 1rem;
+    margin-top: .7rem;
+  }
+  .spanA {
+    font-size: 1.2rem;
+  }
+  .primerPlano {
+    margin: 0rem;
+  }
+  .h {
+    font-size: 1rem;
+  }
+  .h5a {
+    font-size: 1rem;
+  }
+  .descripcion {
+   font-size: .7rem;
+  }
+  .descriptionDatos {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .containerDetail {
+    margin-top: 3rem;
+    margin-left: 7%;
+    width: 85%;
+  }
+  .nameV {
+    font-size: 2.8rem;
+  }
+  .nameImage {
+    flex-direction: row;
+  }
+  .imagen {
+    margin-left: 3rem;
+    width: 12.5rem;
+  }
+  .generosPlataformas {
+    flex-direction: row;
+  }
+  .ratingRelease {
+    margin: 1.5rem;
+  }
+  .name {
+    font-size: 1.2rem;
+    margin-top: .8rem;
+  }
+  .spanA {
+    font-size: 1.4rem;
+  }
+  .primerPlano {
+    margin: 0rem;
+  }
+  .h {
+    font-size: 1.1rem;
+  }
+  .h5a {
+    font-size: 1.1rem;
+  }
+  .descripcion {
+   font-size: .8rem;
+  }
+  .descriptionDatos {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerDetail {
+    margin-top: 3rem;
+    margin-left: 10%;
+    width: 80%;
+  }
+  .nameV {
+    font-size: 3rem;
+  }
+  .nameImage {
+    flex-direction: row;
+  }
+  .imagen {
+    margin-left: 3rem;
+    width: 15rem;
+  }
+  .generosPlataformas {
+    flex-direction: row;
+  }
+  .ratingRelease {
+    margin: 2rem;
+  }
+  .name {
+    font-size: 1.2rem;
+    padding-top: 0;
+  }
+  .spanA {
+    font-size: 1.2rem;
+  }
+  .primerPlano {
+    margin: .3rem;
+  }
+  .h {
+    font-size: 1.3rem;
+  }
+  .h5a {
+    font-size: 1.3rem;
+  }
+  .descripcion {
+   font-size: .9rem;
+  }
+  .descriptionDatos {
+    font-size: 1.4rem;
+  }
+ 
+}
+@media (min-width: 1700px) {
+  .containerDetail {
+    margin-top: 3rem;
+    margin-left: 15%;
+    width: 70%;
+  }
+  .nameV {
+    font-size: 3rem;
+  }
+  .nameImage {
+    flex-direction: row;
+  }
+  .imagen {
+    margin-left: 3rem;
+    width: 18rem;
+  }
+  .generosPlataformas {
+    flex-direction: row;
+  }
+  .ratingRelease {
+    margin-left: 2rem;
+    /* margin-bottom:.3rem; */
+  }
+  .name {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+
+  }
+  .spanA {
+    font-size: 1.8rem;
+    margin-left: 1.6rem;
+    
+  }
+  .primerPlano {
+    margin: .3rem;
+  }
+  .h {
+    font-size: 1.5rem;
+  }
+  .h5a {
+    font-size: 1.5rem;
+  }
+  .descripcion {
+   font-size: 1rem;
+  }
+  .descriptionDatos {
+    font-size: 1.3rem;
+  }
+}
+

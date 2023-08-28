@@ -1,0 +1,105 @@
+
+.principal {
+    display: flex;
+    justify-content: center;
+
+}
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    border: 1px solid #4498f4;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 5px rgba(255, 228, 196, 0.822);
+    width: 60%;
+    height: 100%;
+   padding: 30px;
+}
+.active {
+    -webkit-text-stroke: 1px #9f13ed;
+    font-size: 20px;
+    border-bottom-width: 80px;
+    color:  rgb(24, 117, 143);
+    text-underline-offset: 8px;
+    text-decoration: none;
+    /* text-decoration-color: rgb(38, 38, 38); */
+    /* text-decoration-thickness: 2px;     */
+}
+.disable {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 765px) {
+    .mainContainer {
+        width: 7rem;
+        height: 4rem;
+        flex-direction: column-reverse;
+        align-content: center;       
+    } 
+    .active {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    } 
+    .disable {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }  
+  }
+ @media (min-width: 768px) {
+    .mainContainer {
+        width: 60%;
+        height: 100%;
+        flex-direction: row;      
+    } 
+    .active {
+        padding: 0;       
+    } 
+    .disable {
+        padding: 0;       
+    }  
+  }
+
+  
+  @media (min-width: 1024px) {
+    .mainContainer {
+        width: 60%;
+        height: 100%;
+        flex-direction: row;      
+    } 
+    .active {
+        padding: 0;       
+    } 
+    .disable {
+        padding: 0;       
+    }  
+  }
+  
+  @media (min-width: 1280px) {
+    .mainContainer {
+        width: 60%;
+        height: 100%;
+        flex-direction: row;      
+    } 
+    .active {
+        padding: 0;       
+    } 
+    .disable {
+        padding: 0;       
+    }  
+  }
+  @media (min-width: 1792px) {
+    .mainContainer {
+        width: 60%;
+        height: 100%;
+        flex-direction: row;      
+    } 
+    .active {
+        padding: 0;       
+    } 
+    .disable {
+        padding: 0;       
+    }  
+  }
+  
+  
